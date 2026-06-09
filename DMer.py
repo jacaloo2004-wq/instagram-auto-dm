@@ -8,7 +8,7 @@ x = 0
 
 def dmer():
     global x
-    usrnames = ['instagram', 'twitter']  # username whom you will send the message
+    usrnames = ['thehughjackman', 'twitter']  # username whom you will send the message
 
     chrome_options = Options()
     chrome_options.add_argument(
@@ -21,8 +21,8 @@ def dmer():
     usrname_bar = browser.find_element_by_name('username')
     passwrd_bar = browser.find_element_by_name('password')
 
-    username = 'USERNAME'  # Enter your username here
-    password = 'PASSWORD'  # Enter your password here
+    username = 'shadowkitten67'  # Enter your username here
+    password = 'Raggie12'  # Enter your password here
 
     usrname_bar.send_keys(username)
     passwrd_bar.send_keys(password + Keys.ENTER)
@@ -50,7 +50,7 @@ def dmer():
         time.sleep(6)
 
         txt_box = browser.find_element_by_tag_name('textarea')
-        txt_box.send_keys(f"Hi @{usrnames} ! What's up ?")  # Customize your message
+        txt_box.send_keys(f"Goodnight @{thehughjackman} )  # Customize your message
 
         time.sleep(2)
 
@@ -88,6 +88,6 @@ except TypeError:
 try:
     while True and x != 1:
         schedule.run_pending()
-        time.sleep(1)
+        time.sleep(13 * 60 + 50)  # Sleep for 13 minutes and 50 seconds
 except UnboundLocalError:
     pass
